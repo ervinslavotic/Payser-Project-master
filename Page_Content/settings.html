@@ -1,0 +1,45 @@
+<header id="dashboard-header">
+	<nav>
+		<ul>
+			<li><a href="/payslips">Payslips</a></li>
+			<li><a href="/files">Other Files</a></li>
+			<li><a href="/add">Add Files</a></li>
+			<li><a href="/settings">Settings</a></li>
+		</ul>
+	</nav>
+</header>
+<section id="page-content">
+	<div id="site-path">
+		<p>
+			<a href="/">home</a> / <a href="/dashboard"> dashboard </a> / settings
+		</p>
+		<hr />
+	</div>
+	
+	<div id="settings">
+		<h3>Account Settings</h3>
+		<div id="errors"></div>
+		<form name="account-form" id="account-form" method="post" action="/settings">
+			<label>Account Type</label>
+			
+			<select id="type-selector" name="type">
+				<option value="employee" selected>Employee</option>
+				<option value="employer">Employer</option>
+			</select>
+			
+
+			Name:<input type="text" name="name"><br />
+
+			Email:<input type="text" name="email" value="{{email}}"><br />
+		
+			Company:<input type="text" name="company" /><br />
+			
+			<label>Note - If this is you're first time logging in you must set up you're account.</label>
+			
+			<input type="submit" />
+			
+			
+		</form>
+	</div>
+	
+</section>

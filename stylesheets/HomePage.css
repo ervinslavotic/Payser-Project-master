@@ -1,0 +1,105 @@
+/**************/
+
+Colors			Hex
+White-Blue		8FB6D7
+Dark-Blue		1D384F
+Light-Blue		4B91CF
+Grey-Blue		35434F
+Bluer-Blue		396E9C
+
+/**************/
+/**************Content**************/
+
+#content{
+	height: auto;
+	min-height: 500px;
+	border: 10px solid #8FB6D7;
+	background-color: #FFF;
+	overflow: hidden;
+	color: #35434F;
+}
+
+#top-section{
+	font-family: 'Roboto';
+	padding: 10px;
+
+}
+
+#intro{
+	float: left;
+	height: 95%;
+	width: 70%;
+	margin:1.5%;
+}
+
+#intro h2{
+	margin-top: 0px;
+}
+
+#intro h3{
+	margin-top: 30px;
+}
+
+#intro ul{
+	padding-left: 30px;
+	margin-top: .5em;
+}
+
+#sign-up{
+	margin: 1.5%;
+	padding: 2%;
+	width: 20%;
+	background-color: #396E9C;
+	color: #ddd;
+	float: right;
+}
+
+#sign-up h3{
+	margin: 0px;
+}
+
+#sign-up a{
+	text-decoration none;
+	color: #99B2F0;
+}
+
+#sign-up a:hover{
+	color: #fff;
+}
+
+.bottom-section{
+	font-family: 'Roboto';
+	padding: 2.5%;
+	float: left;
+	width: 45%;
+	height: 250px;
+}
+
+.bottom-section-image{
+	padding-top: 5%;
+	width: 30%;
+	float: right;
+}
+
+.bottom-section h3{
+	margin-top: 0px;
+}
+
+.bottom-section-description{
+	float: left;
+	width: 70%;
+}
+
+
+.bottom-section-description ul{
+	padding-left: 0px;
+	list-style-type: none;
+}
+
+.bottom-section-description ul li{
+	padding-top:5px;
+}
+
+
+
+/**************End Of Content**************/

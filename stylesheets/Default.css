@@ -1,0 +1,176 @@
+/**************/
+
+Colors			Hex
+White-Blue		8FB6D7
+Dark-Blue		1D384F
+Light-Blue		4B91CF
+Grey-Blue		35434F
+Bluer-Blue		396E9C
+
+/**************/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0px;
+	display: block
+}
+
+html { 
+	background-color: #333;
+	background: url("/images/bg.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#wrapper{
+		margin: 0 auto;
+		width: 1000px;
+	}
+@media (max-width: 1980px){
+	#wrapper{
+		margin: 0 auto;
+		width: 1000px;
+	}
+}
+
+@media (max-width: 1024px){
+
+	#wrapper{
+		margin: 0 auto;
+		width: 900px;
+	}
+}
+
+@media (max-width: 800px) {
+	 #wrapper{
+		margin: 0 auto;
+		width: 750px;
+	}
+}
+
+
+a{
+	transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear; /* Firefox 4 */
+	-webkit-transition: all 0.2s linear; /* Safari and Chrome */
+	-o-transition: all 0.2s linear; /* Opera */
+}
+
+/**************Header**************/
+
+#main-header{
+	height: 200px;
+	
+}
+
+#header-logo{
+	padding-top: 25px;
+	padding-left: 2.5%;
+	width: 25%;
+	float: left;
+}
+
+#header-logo:hover{
+	transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear; /* Firefox 4 */
+	-webkit-transition: all 0.2s linear; /* Safari and Chrome */
+	-o-transition: all 0.2s linear; /* Opera */
+	opacity: 0.7;
+}
+
+#main-header nav{
+	float: right;
+	width: 72.5%;
+}
+
+#main-header nav ul{
+	margin: 0px;
+	padding-top: 105px;
+}
+
+#main-header nav ul li{
+	display: inline;
+}
+
+#main-header nav ul li a{
+	text-decoration: none;
+	padding: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.8em;
+	color: #8FB6D7;
+}
+
+#main-header nav ul li a:hover{
+	opacity: 0.4;
+}
+
+/**************End-Of-Header**************/
+/**************Content**************/
+
+#content{
+	height: auto;
+	font-family: 'Roboto', sans-serif;
+	min-height: 500px;
+	border: 10px solid #8FB6D7;
+	background-color: #FFF;
+	overflow: hidden;
+	color: #35434F;
+}
+
+
+/**************End Of Content**************/
+/**************Footer**************/
+
+#main-footer{
+	padding: 10px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.footer-section{
+	color: #8FB6D7;
+	float: left;
+	width:25%;
+
+}
+
+.footer-section h3{
+	padding-left: 2em;
+	color: #eee;
+	text-decoration: underline;
+	margin-bottom:0;
+}
+
+.footer-section ul{
+	
+}
+
+.footer-section ul li{
+	list-style-type: none;
+	padding: 2px;
+}
+.footer-section ul li a{
+	color: #DDD;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+
+
+.footer-section ul li a:hover{
+	color: #AAA;
+}
+
+.footer-section ul li p{
+	color: #DDD;
+	font-size: 1.2em;
+	text-decoration: none;
+	margin: 0px;
+}
+
+/**************End Of Footer**************/
+
+
+
+
+

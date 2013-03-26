@@ -1,0 +1,109 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Payser</title>
+	<link rel = "stylesheet" href="About.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
+	<!--scripts-->
+	
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js' type="text/javascript"></script>
+	<script type="text/javascript">
+	
+		
+	var $raise = 10;
+		$(document).ready(function() {
+			$('#desc div:not(:first)').hide();
+			
+			if($('.active').length <= 0)
+			{
+				openTab(0);
+			}
+			
+			$('#tabs li').click(function(event){
+				var id = $(event.target).index();
+				closedTabs();
+				openTab(id);
+			
+			});
+		});
+		
+		function closedTabs()
+		{	
+			var $target = $('.active');
+			$('#desc div').slideUp('normal');
+			$target.removeClass('active');
+			
+		}
+		
+		function openTab(id)
+		{
+			$('#desc div').eq(id).slideDown('normal');
+			$('#tabs li').eq(id).addClass('active');
+			$target = $('.active');
+		}
+	</script>
+	 
+</head>
+<body>
+<div id = "wrapper">
+	<div id = "design_tabs">
+			<ul>
+				<li>Payser Design</li>
+			
+				
+			</ul>
+	</div>
+	
+<div id = "desc">
+	<div id = "front-end"> 
+	<!-- Payseer design slide -->
+		<h2>Design</h2>
+		<article>
+		<h3>Requirements</h3>
+			The Google App engine allows us the developers to develop applications on Google's Infrstructure <br>
+			so in order for the software to run we need SDK's and componants with the Google App Engine for Python.<br>
+			The Python environment is very productive for GAE since it provides rich Python APIs for Google Datastore,<br>
+			Google Accounts and URL fetch and email services
+			componants.<br><br>
+			<img id="python" alt="curly" src="/images/python.png">
+			<img id="python" alt="curly" src="/images/gae2.png">
+			
+		</article>
+		
+		<section>
+		<h3>Jinja & Gmail</h3>
+		Payser is available for two types of users - Employee and Employer.<br>
+		Payser is based and hosted via the <a href="http://cloud.google.com/appengine">Google App Engine</a>.<br>
+		This provides Payser with a framework to manage user data efficiently.<br>
+		Payser holds a description of the resources which it uses to function<br><br>
+				
+		correctly.
+		For templates we use <a href = "https://pypi.python.org/pypi/Jinja2">Jinja</a> which is an environment<br>
+		based within our Python Scripts to load our templates corresponding<br>
+		to the applications link.
+		
+		</section>
+		<br><br><br>
+			<img id="python" alt="curly" src="/images/LogoBIG.gif">
+			
+			<div >
+				....All of the designs were done by Jack Kettle
+			
+			</div>
+		
+			
+	</div>
+	<!-- Back-end slide -->
+	
+		
+			
+		
+
+</div>
+
+</body>
+</html>
+	
+	

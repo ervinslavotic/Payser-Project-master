@@ -1,0 +1,146 @@
+/**************/
+
+Colors			Hex
+White-Blue		8FB6D7
+Dark-Blue		1D384F
+Light-Blue		4B91CF
+Grey-Blue		35434F
+Bluer-Blue		396E9C
+
+/**************/
+
+/**************Dashboard-Content**************/
+
+#account-info-h3{
+	widht: 150px;
+	float: left;
+}
+#site-path{
+	margin: 1em;
+	margin-bottom: 0;
+}
+
+#site-path p{
+	color: #333;
+	margin: 0px;
+}
+
+#site-path a{
+	color: #888;
+	text-decoration:none;
+}
+
+#site-path a:hover{
+	color: #666;
+}
+
+#site-path hr{
+	margin-bottom:0;
+}
+
+#dashboard-header{
+	height: 3em;
+}
+
+#dashboard-header nav{
+	
+}
+
+#dashboard-header nav ul{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+#dashboard-header nav ul li{
+	padding: 1%;
+	width: 23%;
+	list-style-type: none;
+	float: left;
+	text-align:center;
+	border-bottom: 5px solid #8FB6D7;
+	background-color: #396E9C;
+}
+
+#dashboard-header nav ul li a{
+	text-decoration: none;
+	color: #EEE;
+	font-size: 1.4em;
+	padding: 10px;
+}
+
+#dashboard-header nav ul li a:hover{
+	color: #BBB;
+}
+
+#dashboard-content{
+	
+}
+
+#account-info{
+	width: 71.5%;
+	float: left;
+	margin: 1.5%;
+	margin-right:0;
+}
+
+#account-info h3,h4{
+	margin: 0px;
+}
+
+.account-info-h3{
+	padding: 5px;	
+	color: #1D384F;
+	background: #DDD;
+}
+
+table{
+	border-collapse: collapse;
+	border-color: white;
+	width:100%;
+}
+
+thead{
+	text-align: left;
+	border-bottom: 4px solid #555;
+}
+
+tr{
+	font-family: 'Roboto';
+	overflow:hidden;
+}
+
+td, th{
+	padding: 5px;		
+}
+
+tr:nth-child(even) {border-bottom: 2px solid #CCC;}
+tr:nth-child(odd) {border-bottom: 2px solid #CCC;}
+
+
+/*Upload info*/
+
+#upload-info{
+	margin: 1.5%;
+	padding: 2%;
+	width: 20%;
+	background-color: #1D384F;
+	color: #ddd;
+	float: right;
+}
+
+#upload-info h3{
+	margin: 0px;
+}
+
+#upload-info a{
+	text-decoration none;
+	color: #8FB6D7;
+}
+
+#upload-info a:hover{
+	color: #fff;
+}
+
+/**************End of Dashboard-Content**************/

@@ -1,0 +1,158 @@
+/**************/
+
+Colors			Hex
+White-Blue		8FB6D7
+Dark-Blue		1D384F
+Light-Blue		4B91CF
+Grey-Blue		35434F
+Bluer-Blue		396E9C
+
+/**************/
+
+/**************Payslips-Content**************/
+
+#dashboard-header{
+
+}
+
+#dashboard-header nav{
+	
+}
+
+#dashboard-header nav ul{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+#dashboard-header nav ul li{
+	padding: 1%;
+	width: 23%;
+	list-style-type: none;
+	float: left;
+	text-align:center;
+	border-bottom: 5px solid #8FB6D7;
+	background-color: #396E9C;
+}
+
+#active{
+	background-color: #ff0000;
+}
+
+#dashboard-header nav ul li a{
+	text-decoration: none;
+	color: #EEE;
+	font-size: 1.4em;
+	padding: 10px;
+}
+
+#dashboard-header nav ul li a:hover{
+	color: #BBB;
+}
+
+#sidebar{
+	width: 22%;
+	padding: 1.5%;
+	height: 500px;
+	float: left;
+	background-color: #DDD;
+
+}
+
+#filter{
+	width: 60%;
+}
+
+#upload h3{
+	margin-bottom: 5px;
+}
+
+
+#upload a{
+
+	color: #4B91CF;
+}
+
+#upload a:hover{
+
+	color: #8FB6D7;
+}
+
+#file-browser{
+	width: 75%;
+	height: 500px;
+	float:right;
+	background-color: #fff;
+}
+
+#site-path{
+	bottom: .5em;
+}
+
+#site-path p{
+	color: #333;
+	margin: 0px;
+}
+
+#site-path a{
+	color: #888;
+	text-decoration:none;
+}
+
+#site-path a:hover{
+	color: #666;
+}
+
+/*Table*/
+#table-container{
+	height: 60%;
+}
+
+table{
+	border-collapse: collapse;
+	border-color: white;
+	width:100%;
+}
+
+thead{
+	text-align: left;
+	border-bottom: 4px solid #555;
+}
+
+tr{
+
+	overflow:hidden;
+}
+
+td, th{
+	padding: 5px;		
+}
+
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}
+
+#page-selector{
+	height: 5%;
+}
+
+#container{
+	width: 20px;
+	margin: 0 auto;
+}
+
+.page-nums{
+	background-color: #999;
+	color: #fff;
+	text-decoration: none;
+	padding: 2px 5px;
+}
+
+#chart-div{
+	height:35%;
+	width: 98%;
+	padding:1%;
+}
+
+/*End of Table*/
+/**************End of Payslips-Content**************/

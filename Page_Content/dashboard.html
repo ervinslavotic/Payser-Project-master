@@ -1,0 +1,67 @@
+<header id="dashboard-header">
+	<nav>
+		<ul>
+			<li><a href="/payslips">Payslips</a></li>
+			<li><a href="/files">Other Files</a></li>
+			<li><a href="/add">Add Files</a></li>
+			<li><a href="/settings">Settings</a></li>
+		</ul>
+	</nav>
+</header>
+<section id="page-content">
+	<div id="site-path">
+		<p>
+			<a href="/">home</a> / dashboard
+		</p>
+		<hr />
+	</div>
+	<div id="account-info">
+		<h3 class="account-info-h3">Account Info</h3>
+
+		<table>
+			<tr>
+				<td><h4>Name:</h4></td>
+				<td>{{name}}</td>
+			</tr>
+			<tr>
+				<td><h4>Email:</h4></td>
+				<td>{{email}}</td>
+			</tr>
+			<tr>
+				<td><h4>Account Type:</h4></td>
+				<td>{{account_type}}</td>
+			</tr>
+			<tr>
+				<td><h4>Number of payslips:</h4></td>
+				<td>{{payslip_quantity}}</td>
+			</tr>
+			<tr>
+				<td><h4>Number of files:</h4></td>
+				<td>{{file_quantity}}</td>
+			</tr>
+			<tr>
+				<td><h4>Total income</h4></td>
+				<td>${{income}}</td>
+			</tr>
+			<tr>
+				<td><h4>Total Tax</h4></td>
+				<td>${{tax}}</td>
+			</tr>
+			<tr>
+				<td><h4>Net Earnings</h4></td>
+				<td>${{net}}</td>
+			</tr>
+		</table>
+		
+	</div>
+
+	<div id="upload-info">
+		<h3>Add Payslips / Documents</h3>
+		<hr />
+		<p>Allow us to search your email and add previous payslips.</p>
+		<a href="/settings">Configure Settings</a>
+		<p>Or you can simply upload them as you see fit.</p>
+		<a href="/add">Upload</a>
+	</div>
+	
+</section>

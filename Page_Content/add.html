@@ -1,0 +1,51 @@
+<header id="dashboard-header">
+	<nav>
+		<ul>
+			<li><a href="/payslips">Payslips</a></li>
+			<li><a href="/files">Other Files</a></li>
+			<li style="background-color: #CC0000;"><a href="/add">Add Files</a></li>
+			<li><a href="/settings">Settings</a></li>
+		</ul>
+	</nav>
+</header>
+<section id="page-content">
+	<div id="site-path">
+		<p>
+			<a href="/">home</a> / <a href="/dashboard">dashboard</a> / add
+		</p>
+		<hr />
+	</div>
+	<div id="upload">
+		<h3>Upload</h3>
+		<div id="errors"></div>
+		<form name="upload-form" id="upload-form" method="post" action="/add">
+			<label>Type Of File</label>
+			<select id="type-selector" name="type">
+				<option value="payslip" selected>Payslip</option>
+				<option value="other">Other</option>
+			</select>
+			<div id="payslip-info">
+
+				Company:<input type="text" name="company"><br />
+
+				Income:<input type="text" name="income"><br />
+	
+				Tax:<input type="text" name="tax"><br />
+				
+				Beginning:<input type="date" name="beginning"><br />
+				
+				Ending:<input type="date" name="ending"><br />
+
+			</div>
+			<div id="file-info">
+				Title:<input type="text" name="title"><br />
+			
+				Description:<input type="text" name="description"><br />
+			</div>
+			
+			<label>File:</label>
+			<input type="file" value="file" />
+			<input type="submit" />
+		</form>
+	</div>
+</section>

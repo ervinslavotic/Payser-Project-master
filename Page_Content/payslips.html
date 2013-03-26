@@ -1,0 +1,70 @@
+<header id="dashboard-header">
+	<nav>
+		<ul>
+			<li style="background-color: #CC0000;"><a href="/payslips">Payslips</a></li>
+			<li><a href="/files">Other Files</a></li>
+			<li><a href="/add">Add Files</a></li>
+			<li><a href="/settings">Settings</a></li>
+		</ul>
+	</nav>
+</header>
+<section id="sidebar">
+	<div id="site-path">
+		<p>
+			<a href="/">home</a> / <a href="dashboard">dashboard</a> / payslips
+		</p>
+		<hr />
+	</div>
+	<div id="filter">
+		<h3>Filter</h3>
+		
+		<form method="post" action="/payslips">
+			<label>Beginning From</label>
+			<input type="date" name="to" />
+			<label>Ending Up To</label>
+			<input type="date" value="from" />
+			<label>Earnings Up To</label>
+			<select name="Earnings">
+				<option value="Any">Any</option>
+				<option value="500">500+</option>
+				<option value="1000">1000+</option>
+				<option value="1500">1500+</option>
+				<option value="2000">2000+</option>
+			</select>
+			<input type="submit" value="Filter" />
+		</form>
+	</div>
+	
+	<div id="upload">
+		<h3>Upload</h3>
+		<p>Plain old upload.</p>
+		<a href="/upload">Upload</a>
+		<p>Configure your setting so you we can automatically add payslips from your email.</p>
+		<a href="/settings">Configure Settings</a>
+	</div>
+</section>
+<section id="file-browser">
+	<div id="table-container">
+		<table>
+			<thead>
+				<th>Date Added</th>
+				<th>Company</th>
+				<th>Beginning</th>
+				<th>Ending</th>
+				<th>Gross </th>
+				<th>Tax</th>
+				<th>Net </th>
+				<th>View</th>
+			</thead>
+			{{payslips}}
+		</table>
+	</div>
+	<hr/>
+	<div id="page-selector">
+		<div id="container">
+			<a class="page-nums" href="#">1</a>
+		</div>
+	</div>
+	<div id="chart-div">
+	</div>
+</section>

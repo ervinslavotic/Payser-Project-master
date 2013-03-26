@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Payser</title>
+	<link rel = "stylesheet" href="About.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
+	<!--scripts-->
+	
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js' type="text/javascript"></script>
+	<script type="text/javascript">
+	
+		
+	var $raise = 10;
+		$(document).ready(function() {
+			$('#desc div:not(:first)').hide();
+			
+			if($('.active').length <= 0)
+			{
+				openTab(0);
+			}
+			
+			$('#tabs li').click(function(event){
+				var id = $(event.target).index();
+				closedTabs();
+				openTab(id);
+			
+			});
+		});
+		
+		function closedTabs()
+		{	
+			var $target = $('.active');
+			$('#desc div').slideUp('normal');
+			$target.removeClass('active');
+			
+		}
+		
+		function openTab(id)
+		{
+			$('#desc div').eq(id).slideDown('normal');
+			$('#tabs li').eq(id).addClass('active');
+			$target = $('.active');
+		}
+	</script>
+	 
+</head>
+<body>
+<div id = "wrapper">
+	<div id = "tabs">
+			<ul>
+				<li>Payser Design</li>
+				<li>Back-End</li>
+				
+			</ul>
+	</div>
+	
+<div id = "desc">
+	
+	<div id = "front-end"> 
+	<!-- Payseer design slide -->
+		<h2>User Interface:</h2>
+		<img id="about" alt="curly" src="/images/jinja-logo.png">
+		<section>
+		<h3>Goal</h3>
+		Payser is open to all users and employers for free account setup. Employers will be able to provide<br>
+		their employees with lighting fast synchronization of their payslips and from here our service could lead<br> 
+		to a more personalized and privatized environment on Payser. Our goal is to grow into a service which <br>
+		synchronizes all sorts of personal documents securely online, amid payslips with employers, <br>
+		also personal tax documents with the tax office, collages letters from collage etc.  <br>
+		</section>
+		<br><br><br>
+			<article>
+			<h3>Payser</h3>
+			Payser serves as a front-end web application for the user developed in Python. This is the way in which 
+			the user will interact with the application and we will provide full control to the user regarding their 
+			account and personal data. Presenting the application as a friendly UI is a reletivly simple development 
+			and also effective since it removes the hassle of the user having to worry about the back-end needs and 
+			requirements.
+			</article>
+		<section>
+		<h3>Architecture</h3>
+		The Architecture of the Payser Project consists of three distinct attributes. The first is the back-end aspect 
+		which is the framework used to develop the service which is WebApp2 and also Jinja which is a Python based 
+		framework for linking HTML templates.</br> WebApp2 is linked directly to the GAE which gives us full control over
+		what we want to have in our System. 
+		
+		</section>
+		
+			
+	</div>
+	<!-- Back-end slide -->
+		<div id = "front-end"> 
+		<h2>Back-end</h2>
+		
+		<img id="about" alt="curly" src="/images/jq.png">
+		
+		<section>
+		<h3>Frameworks</h3>
+		There are two main frameworks used in the development of the application and these are WebApp2 and Jinja.
+		Webapp2 is a framework which is directly linked to the GAE and needs only to be imported in Pythons source
+		codes of all forms within the application and after we have imported these libraries from Webapp2 we can use 
+		its functions within each python script. Jinja is also a web framework which enables us to develop dynamic
+		web applications. It has various features to make loading various HTML templates a lot more simpler. 
+		</br>
+		Simply by declaring a Jinja environment within each script we can efficiently develop a highly responsive
+		user interface and eye catching designs. The user does not see this aspect of the appliction.
+
+		
+		</section>
+		<br><br>
+			<article>
+			<h3>DataStore</h3>
+			Data is stored using users' existing gmail accounts and we provide a link for sign up aswell.
+			Since we are using GAE we are enabled to use data from users via their Gmail/Google accounts
+			and setup these accounts in our datastore. The Datastore holds data about the user and their
+			attributes. It is used to store various data types.  
+			</article>
+		<img id="about2" alt="curly" src="/images/gmail_logo.png">
+		
+			
+	</div>
+
+</div>
+
+</body>
+</html>
+	

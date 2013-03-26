@@ -1,0 +1,49 @@
+application: payser-project
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /stylesheets
+  static_dir: stylesheets
+  
+- url: /images
+  static_dir: images
+  
+- url: /js
+  static_dir: js
+  
+- url: /fonts
+  static_dir: fonts
+
+- url: /design
+  script: Design.app
+
+- url: /about
+  script: About.app
+  
+- url: /dashboard
+  script: Dashboard.app
+  
+- url: /payslips
+  script: Payslips.app
+  
+- url: /files
+  script: Files.app
+  
+- url: /add
+  script: Add.app
+ 
+- url: /settings
+  script: Settings.app
+  
+- url: /
+  script: HomePage.app
+  
+- url: /.*
+  script: Error.app 
+  
+libraries:
+- name: jinja2
+  version: latest
